@@ -1,11 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const { PrismaClient } = require("@prisma/client");
 const noteRouter = require("./routes/noteRouter");
 
 const app = express();
 const port = 3000;
-const prisma = new PrismaClient();
 
 dotenv.config();
 
